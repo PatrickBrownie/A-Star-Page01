@@ -93,7 +93,7 @@ img {
 /* 特色區塊 */
 .text-area {
   /* border: red 2px solid; */
-  height: 280px;
+  height: 100%;
   /* width: 100%; */
 }
 
@@ -102,6 +102,19 @@ img {
 }
 
 /* Footer區塊 */
-.footer li:hover {
+.footer svg {
+  fill: #222221;
+}
+
+.footer svg:hover {
   fill: white;
+}
+
+.copywrite {
+  color: black;
+}
+
+.fotter-logo img {
+  height: 80px;
+  margin-top: 0px;
 }

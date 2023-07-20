@@ -209,9 +209,8 @@
   background-color: white;
   color: rgb(5, 5, 5);
   padding: 40px 0px;
-  border: rgb(25, 0, 255) 2px solid;
   position: relative;
-  height: 600px;
+  height: 100%;
 }
 
 .star-area3 img {
@@ -240,6 +239,15 @@
   width: 36px;
 }
 
+.section4-img {
+  padding: 20px 0px 0px 20px;
+  margin-left: 80px;
+  background-color: #9c8135d8;
+  color: #fff;
+  border-radius: 0 80px 0 80px;
+  z-index: 1;
+}
+
 .index-section4 h2 {
   color: #9c8135;
 }
@@ -260,11 +268,11 @@
   background-image: url(./images/notice/no01.jpg);
   position: relative;
   z-index: 0;
-  color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  height: 450px;
 }
 
 .index-section5::before {
@@ -281,23 +289,37 @@
 .index-section5 ul {
   color: black;
   padding-bottom: 20px;
+  padding: 20px 50px;
 }
 
 .content h2 {
   padding: 12px 50px;
   border-radius: 100px;
-  display: inline-block;
   background-color: #9c8135;
+  display: inline-block;
   position: absolute;
   top: 20px;
   right: 43%;
   z-index: 1;
+  color: black;
 }
 
 .color-box {
   background-color: #fbfbf9af;
   color: white;
   border-radius: 0px 80px 0px 80px;
+  margin-top: 50px;
+  position: relative;
+  margin: 0px 10%;
+}
+
+.content h2 {
+  position: absolute;
+  top: -30px;
+}
+
+ul {
+  margin-top: 30px;
 }
 
 /* footer */
