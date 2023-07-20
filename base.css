@@ -100,21 +100,3 @@ img {
 .index-section3 img {
   border-radius: 0px 40px 0px 40px;
 }
-
-/* Footer區塊 */
-.footer svg {
-  fill: #222221;
-}
-
-.footer svg:hover {
-  fill: white;
-}
-
-.copywrite {
-  color: black;
-}
-
-.fotter-logo img {
-  height: 80px;
-  margin-top: 0px;
-}
