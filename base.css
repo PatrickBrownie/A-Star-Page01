@@ -100,3 +100,8 @@ img {
 .index-section3 img {
   border-radius: 0px 40px 0px 40px;
 }
+
+/* Footer區塊 */
+.footer li:hover {
+  fill: white;
+}

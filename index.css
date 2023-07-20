@@ -16,7 +16,9 @@
 }
 
 .carousel-item img {
-  height: 700px;
+  width: 100%;
+  height: 600px;
+  /* height: 700px; */
   object-fit: cover;
 }
 
@@ -62,11 +64,49 @@
   z-index: 1;
   width: 100%;
 }
-/* 房間照片區塊 */
+
+/* 設備照片區塊 */
+.index-section2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* button請複製 */
 #button01 {
-  background-image: url(./images/room-photo/room01.jpg);
-  width: 100px !important;
-  height: 100px !important;
+  background-image: url(./images/space/space01.jpg);
+  width: 80px !important;
+  height: 80px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#button02 {
+  background-image: url(./images/space/space02.jpg);
+  width: 80px !important;
+  height: 80px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#button03 {
+  background-image: url(./images/space/space03.jpg);
+  width: 80px !important;
+  height: 80px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#button04 {
+  background-image: url(./images/space/space04.jpg);
+  width: 80px !important;
+  height: 80px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#button05 {
+  background-image: url(./images/space/space05.jpg);
+  width: 80px !important;
+  height: 80px !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -90,6 +130,11 @@
   padding: 5% 10%;
 }
 
+.room-area p {
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
 .room-carousel {
   margin-right: 30px;
   width: 60%;
@@ -108,22 +153,16 @@
   height: 100%;
 }
 
-/* 房型內部區塊 */
-.index-section2 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 /* 特色區塊 */
 .index-section3 {
-  padding: 80px 80px;
+  padding: 40px 80px;
   background-color: #9c8135;
   justify-content: center;
   height: auto;
 }
 
 .text-area {
-  padding-right: 50px;
+  width: 50%;
 }
 
 .feature-area {
@@ -145,7 +184,7 @@
   top: 50px;
   float: right;
   right: 0;
-  width: 50%;
+  width: 40%;
   position: absolute;
 }
 
@@ -170,31 +209,39 @@
   background-color: white;
   color: rgb(5, 5, 5);
   padding: 40px 0px;
-  border: red 2px solid;
+  border: rgb(25, 0, 255) 2px solid;
   position: relative;
-  height: 500px;
+  height: 600px;
+}
+
+.star-area3 img {
+  height: 25px;
+  width: 36px;
+  padding-left: 0px;
+  margin-right: 5px;
 }
 
 .section4-img {
   margin-right: 50px;
-  padding-left: 20%;
+  padding-left: 10%;
   padding-top: 20px;
 }
 .section4-img img {
   border-radius: 0px 50px 0px 50px;
+  width: 100%;
 }
 .section4-txt {
-  float: right;
+  padding-right: 10%;
   padding-top: 20px;
 }
 
-.section4-txt h5 {
-  color: #9c8135;
+.section4-txt img {
+  height: 25px;
+  width: 36px;
 }
 
 .index-section4 h2 {
   color: #9c8135;
-  padding-bottom: 40px;
 }
 
 .index-section4::before {
@@ -208,23 +255,49 @@
   z-index: -1;
 }
 
+/* Notice區塊 */
 .index-section5 {
   background-image: url(./images/notice/no01.jpg);
-  /* 圖片滿版 */
-  background-size: cover;
-  background-position: center;
   position: relative;
   z-index: 0;
   color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
-.index-section5 .ul {
+.index-section5::before {
+  content: "";
+  position: absolute;
+  background-color: #03030376;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+.index-section5 ul {
   color: black;
+  padding-bottom: 20px;
 }
 
-/* Carousel */
-.carousel {
-  width: auto;
+.content h2 {
+  padding: 12px 50px;
+  border-radius: 100px;
+  display: inline-block;
+  background-color: #9c8135;
+  position: absolute;
+  top: 20px;
+  right: 43%;
+  z-index: 1;
+}
+
+.color-box {
+  background-color: #fbfbf9af;
+  color: white;
+  border-radius: 0px 80px 0px 80px;
 }
 
 /* footer */
