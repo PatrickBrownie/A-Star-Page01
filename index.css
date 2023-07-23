@@ -209,11 +209,6 @@
 }
 
 .pic-101 {
-  /* top: 50px;
-  float: right;
-  right: 0;
-  width: 40%;
-  position: absolute; */
   flex: 0.5;
 }
 
@@ -237,11 +232,8 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-
   color: rgb(5, 5, 5);
   padding: 40px 0px;
-  position: relative;
-  height: 720px;
 }
 
 .star-area3 img {
@@ -251,21 +243,9 @@
   margin-right: 5px;
 }
 
-.section4-img-area {
-  /* flex: 0.5; */
-}
-
 .section4-background img {
   border-radius: 0px 50px 0px 50px;
   width: 100%;
-}
-.section4-txt {
-  /* padding-right: 10%; */
-  /* padding-top: 20px; */
-  flex: 0.5;
-  /* margin-left: 120px; */
-  /* width: 100%; */
-  /* width: 45%; */
 }
 
 .section4-txt img {
@@ -275,12 +255,10 @@
 
 .section4-background {
   padding: 20px 0px 0px 20px;
-  /* margin-left: 80px; */
   background-color: #9c8135d8;
   color: #fff;
   border-radius: 0 80px 0 80px;
-  z-index: 1;
-  width: 55%;
+  width: 100%;
 }
 
 .index-section4 h2 {
@@ -307,7 +285,7 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 450px;
+  padding: 50px 0px;
 }
 
 .index-section5::before {
@@ -333,10 +311,12 @@
   background-color: #9c8135;
   display: inline-block;
   position: absolute;
-  top: 20px;
-  right: 43%;
   z-index: 1;
   color: black;
+  top: -30px;
+  /* 置中 */
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .color-box {
@@ -346,11 +326,6 @@
   margin-top: 50px;
   position: relative;
   margin: 0px 10%;
-}
-
-.content h2 {
-  position: absolute;
-  top: -30px;
 }
 
 ul {
