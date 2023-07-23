@@ -34,11 +34,48 @@ img {
   /* 水平置中 */
   justify-content: center;
   /* background-color: #ffffff; */
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .icon-area {
+    color: rgb(67, 66, 66);
+    font-size: 30px;
+  }
+
+  .user {
+    padding: 0px 10px;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .order {
+    padding: 0px 10px;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .menu {
+    padding: 0px 10px;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
 }
 
 .navbox {
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .navlink {

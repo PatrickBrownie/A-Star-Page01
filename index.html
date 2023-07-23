@@ -30,6 +30,25 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="./all.css" />
+
+    <!-- Top回到置頂 -->
+    <style>
+      #fixedTop {
+        text-decoration: none;
+        background-color: #9c8135;
+        border: white solid 3px;
+        color: white;
+        padding: 14px 10px;
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        z-index: 9999;
+        font-size: 18px;
+        /* 先不顯示，透過捲軸捲動才顯示出來 */
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -61,6 +80,17 @@
           <img class="star" src="./SVG/blackstar.svg" alt="" />
           聯繫我們
         </a>
+      </div>
+      <div class="icon-area d-flex">
+        <div class="user">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="order">
+          <i class="fa-solid fa-hotel"></i>
+        </div>
+        <div class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </nav>
 
@@ -139,11 +169,16 @@
             <!-- 從這邊改 -->
             <div class="carousel-item active h-100" data-immersive-translate-effect="1" data-immersive_translate_walked="7a5abec9-b7c7-4992-b249-8854f0ace6df">
               <div class="room-area d-flex h-100 w-100 justify-content-between">
+                <!-- M版出現的標題 -->
+                <div class="carousel-title-mobile">
+                  <h3>徹底放鬆的私人衛浴空間</h3>
+                </div>
                 <div class="room-carousel d-flex">
                   <img src="./images/space/space01.jpg" alt="" />
                 </div>
+                <!-- PC版的標題 -->
                 <div class="room-text-area d-flex flex-column">
-                  <h3>徹底放鬆的私人衛浴空間</h3>
+                  <h3 class="carousel-title-pc">徹底放鬆的私人衛浴空間</h3>
                   <p>
                     尊榮客房寬敞的衛浴空間，提供房客放鬆、沐浴的私人空間，燈光明亮、柔美的化妝台區，提供房客方便梳化的專屬空間。 每間尊榮防備有義大利進口按摩浴缸，幫助您無時無刻獲得放鬆且頂級的服務！
                   </p>
@@ -153,11 +188,14 @@
             </div>
             <div class="carousel-item h-100">
               <div class="room-area d-flex h-100 w-100 justify-content-between">
+                <div class="carousel-title-mobile">
+                  <h3>一望無際的天然美景</h3>
+                </div>
                 <div class="room-carousel d-flex">
                   <img src="./images/space/space02.jpg" alt="" />
                 </div>
                 <div class="room-text-area d-flex flex-column">
-                  <h3>一望無際的天然美景</h3>
+                  <h3 class="carousel-title-pc">一望無際的天然美景</h3>
                   <p>尊榮房型的天然美景是為您專屬打造的！我們飯店座落於環山圍繞之處，四季的變化有不同的山景，歡迎您細細地品嚐大自然送給您的美好！</p>
                   <p>除了遼闊的美景，我們同樣注重您的隱私，搭配的德製窗簾布，不僅可以遮罩房間內部，以及杜絕刺眼的陽光，只給您最舒適、柔和的溫暖光源，希望您喜歡。</p>
                 </div>
@@ -165,11 +203,14 @@
             </div>
             <div class="carousel-item h-100">
               <div class="room-area d-flex h-100 w-100 justify-content-between">
+                <div class="carousel-title-mobile">
+                  <h3>台北指標性建築盡收眼底</h3>
+                </div>
                 <div class="room-carousel d-flex">
                   <img src="./images/space/space03.jpg" alt="" />
                 </div>
                 <div class="room-text-area d-flex flex-column">
-                  <h3>台北指標性建築盡收眼底</h3>
+                  <h3 class="carousel-title-pc">台北指標性建築盡收眼底</h3>
                   <p>
                     國際尊榮房位於信義區精華地區，從房間內窗戶外即可看見台北具有指標性的建築-101，高聳的外型、美輪美奐的建築設計，搭配國際一線品牌的百貨商場，讓101建築舉世聞名，歡迎您一同前往觀賞。
                   </p>
@@ -179,11 +220,14 @@
             </div>
             <div class="carousel-item h-100">
               <div class="room-area d-flex h-100 w-100 justify-content-between">
+                <div class="carousel-title-mobile">
+                  <h3>舒適的休憩空間</h3>
+                </div>
                 <div class="room-carousel d-flex">
                   <img src="./images/space/space04.jpg" alt="" />
                 </div>
                 <div class="room-text-area d-flex flex-column">
-                  <h3>舒適的休憩空間</h3>
+                  <h3 class="carousel-title-pc">舒適的休憩空間</h3>
                   <p>
                     我們特別於房型內規劃一個空間，讓您可以望著窗外美景、好好地休息片刻，搭配我們的客房服務，提供米其林中西餐的不同選擇，菜色多元、份量亦可依人數作調整，歡迎您提前預約，或是在登記入住之時告知櫃檯人員即可！
                   </p>
@@ -194,11 +238,14 @@
             </div>
             <div class="carousel-item h-100">
               <div class="room-area d-flex h-100 w-100 justify-content-between">
+                <div class="carousel-title-mobile">
+                  <h3>每日定時清潔服務</h3>
+                </div>
                 <div class="room-carousel d-flex">
                   <img src="./images/space/space05.jpg" alt="" />
                 </div>
                 <div class="room-text-area d-flex flex-column">
-                  <h3>每日定時清潔服務</h3>
+                  <h3 class="carousel-title-pc">每日定時清潔服務</h3>
                   <p>我們提供的清潔服務是確保客房維持整潔舒適的重要環節。我們專業的清潔團隊將以細緻入微的態度，致力於提供卓越的服務品質。</p>
                   <p>
                     每日清潔包括更換床單、毛巾及盥洗用品，並徹底清掃地板、窗戶及家具，確保房間的每個細節都得到妥善打理。此外，也會定期進行深度清潔，例如地毯清潔、窗戶擦拭等工作，以確保客房內部的整潔與衛生。
@@ -222,13 +269,13 @@
       <!-- 特色區塊 -->
       <div class="index-section3">
         <div class="w-100 d-flex flex-column align-items-center justify-content-center">
-          <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="star-area2 d-flex">
               <img src="./SVG/blackstar.svg" alt="" />
               <img src="./SVG/blackstar.svg" alt="" />
               <img src="./SVG/blackstar.svg" alt="" />
             </div>
-            <div><h2 class="px-3">特色</h2></div>
+            <div><h2 class="px-2">特色</h2></div>
             <div class="star-area2 d-flex">
               <img src="./SVG/blackstar.svg" alt="" />
               <img src="./SVG/blackstar.svg" alt="" />
@@ -236,7 +283,7 @@
             </div>
           </div>
         </div>
-        <div class="feature-area d-flex">
+        <div class="feature-area d-flex flex-column-reverse flex-lg-row">
           <div class="text-area">
             <div class="d-flex flex-column justify-content-between">
               <div class="ul-area">
@@ -304,9 +351,11 @@
             </div>
           </div>
         </div>
-        <div class="section4-area w-100 d-flex">
-          <div class="section4-img">
-            <img src="./images/bathroom/bath01.jpg" alt="" />
+        <div class="section4-area w-100 d-flex flex-column flex-lg-row align-items-center">
+          <div class="section4-img-area px-5">
+            <div class="section4-background">
+              <img src="./images/bathroom/bath01.jpg" alt="" />
+            </div>
           </div>
           <div class="section4-txt">
             <ul>
@@ -393,5 +442,37 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- 回到Top紐 -->
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script>
+      $(function () {
+        $("body").append('<a href="javascript:void(0);"id="fixedTop">TOP</a>');
+
+        // 變數化
+        let fixedTop = $("#fixedTop");
+
+        // 載入(load)、捲動(scroll)、調整視窗大小(resize)時
+        $(window).on("load scroll resize", function () {
+          // 取得(偵測)卷軸的位置
+          //     console.log($(window).scrollTop());
+
+          //檢查捲軸的位置是否超過100
+          if ($(window).scrollTop() > 100) {
+            // 是＝>顯示TOP紐
+            $("#fixedTop").fadeIn("normal");
+          } else {
+            // 否=>隱藏TOP紐
+            $("#fixedTop").fadeOut("normal");
+          }
+        });
+
+        // 左鍵按一下(click)TOP紐時，回到最上面
+        $("#fixedTop").on("click", function () {
+          // 捲動畫面到最上面=>scrollTop:'0'
+          $("html,body").animate({ scrollTop: "0" }, 500);
+        });
+      });
+    </script>
   </body>
 </html>
